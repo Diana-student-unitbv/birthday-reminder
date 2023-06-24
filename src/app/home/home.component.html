@@ -1,0 +1,20 @@
+<div class="home">
+<div nz-row [nzGutter]="8">
+    <div nz-col [nzSpan]="8">
+ 
+      <nz-card *ngFor="let b of bds"[nzTitle]="b.friendName">
+        <p>Date of birth {{b.birthDayDate |date:'fullDate'}}</p>
+        <p>List of wishes</p>
+        <ul *ngFor="let w of b.wishes">
+             {{b.wishes}}
+        </ul>
+      </nz-card>
+      </div>
+    
+</div>
+
+<button nz-button nzType="primary">
+    <span nz-icon nzType="add"></span>
+   Add
+  </button>
+</div>
