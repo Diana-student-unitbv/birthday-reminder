@@ -10,6 +10,7 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NzTableModule } from 'ng-zorro-antd/table';
 import { HttpClientModule } from '@angular/common/http';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzFormModule } from 'ng-zorro-antd/form';
@@ -41,6 +42,7 @@ registerLocaleData(en);
     NzButtonModule, 
     NzSelectModule,
     NzCardModule,
+    NzTableModule,
     AppRoutingModule
   ],
   providers: [
