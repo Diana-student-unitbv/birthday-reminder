@@ -8,17 +8,17 @@ import { HomeComponent } from '../home/home.component';
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent },
-  {path:'home/:id', component:HomeComponent},
-    {path:'error', loadChildren:()=>import('../error/error.module').then((m)=>m.ErrorModule)},
+  { path: 'home/:id', component: HomeComponent },
+  { path: 'error', loadChildren: () => import('../error/error.module').then((m) => m.ErrorModule) },
   { path: '', component: LoginComponent },
 ]
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule, 
+    CommonModule,
     RouterModule.forRoot(routes)
-  ], 
-  exports:[RouterModule]
+  ],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

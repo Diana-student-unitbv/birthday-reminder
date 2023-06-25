@@ -3,5 +3,7 @@ export interface BirthDay{
     userId:number;
     friendName: string;
     birthDayDate: Date;
+    age:number;
+    phoneNumber:string;
     wishes: string[];
 }

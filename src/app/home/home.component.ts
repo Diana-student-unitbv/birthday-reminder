@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BirthdayService } from '../services/birthday.service';
 import { BirthDay } from '../birthday';
-import { NzTableModule } from 'ng-zorro-antd/table';
 
 @Component({
   selector: 'app-home',
