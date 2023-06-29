@@ -14,12 +14,13 @@ export class LoginComponent {
 
   constructor(private fb: UntypedFormBuilder, private userS: UserService, private router:Router) { }
 
-
+//avem un form
   submitForm(): void {
     if (this.validateForm.valid) {
       this.userS.getUserByEP(this.validateForm.controls['userName'].value, this.validateForm.controls['password'].value).
       subscribe({next:(user)=>{
         this.router.navigate(['/home', user.id]);
+        //SE DUCE PE HOMECOMPONENT SI TRANSMITE USER ID PRIN ROUTE
       }, 
       error:()=> alert("Password or email is wrong")});
       

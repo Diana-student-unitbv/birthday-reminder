@@ -2,9 +2,9 @@
 <h2 style="color:Red"> Birthday remainder</h2>
 <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
     <nz-form-item>
-      <nz-form-control nzErrorTip="Please input your username!">
+      <nz-form-control nzErrorTip="Please input your mail!">
         <nz-input-group nzPrefixIcon="user">
-          <input type="text" nz-input formControlName="userName" placeholder="Username" />
+          <input type="text" nz-input formControlName="userName" placeholder="E-MAIL" />
         </nz-input-group>
       </nz-form-control>
     </nz-form-item>
@@ -21,3 +21,5 @@
     <a style="color:red" [routerLink]="['register']" >Register now!</a>
   </form>
 </div>
+<!--avem un form creat cu nz-form;form care e un reactive form prin comanda  formGroup
+      --->

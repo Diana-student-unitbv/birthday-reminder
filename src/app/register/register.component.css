@@ -1,7 +1,11 @@
 [nz-form] {
     max-width: 600px;
+    color: red;
   }
-
+ .redText
+ {
+  color: red!important;
+ }
   .phone-select {
     width: 70px;
   }
@@ -9,4 +13,5 @@
   .register-are {
     margin-bottom: 8px;
   }
+
   

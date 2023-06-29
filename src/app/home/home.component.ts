@@ -14,7 +14,8 @@ export class HomeComponent {
   constructor(private route: ActivatedRoute, private bdService: BirthdayService) { }
   editCache: { [key: number]: { edit: boolean; data: BirthDay } } = {};
  
-
+//Scopul său este să obțină datele dintr-un serviciu pentru utilizatorii
+// cu un anumit id și să le atribuie variabilei bds
   ngOnInit() {
     this.route.params.subscribe(params => {
       const id = params['id'];
@@ -43,6 +44,7 @@ export class HomeComponent {
   saveEdit(id: number): void {
     const index = this.bds.findIndex(item => item.id === id);
     Object.assign(this.bds[index], this.editCache[id].data);
+    this.bdService.editBD(this.editCache[id].data).subscribe();
     this.editCache[id].edit = false;
   }
 

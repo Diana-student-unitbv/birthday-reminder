@@ -18,3 +18,5 @@ const routes: Routes = [
   ]
 })
 export class ErrorModule { }
+//facut doar ca sa fie un modul inj prin lazyloading(vezi app routing module)
+//nu e chemata nicaieri, nu apare nicaieri

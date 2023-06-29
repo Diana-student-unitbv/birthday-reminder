@@ -19,6 +19,8 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AddBirthdayComponent } from './add-birthday/add-birthday.component';
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 
 
 registerLocaleData(en);
@@ -28,8 +30,10 @@ registerLocaleData(en);
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AddBirthdayComponent
   ],
+  //am importat modulele de la ngzoro
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -43,6 +47,7 @@ registerLocaleData(en);
     NzSelectModule,
     NzCardModule,
     NzTableModule,
+    NzDatePickerModule,
     AppRoutingModule
   ],
   providers: [
